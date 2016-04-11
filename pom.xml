@@ -20,27 +20,28 @@
 
     <properties>
         <jaxb.version>2.2</jaxb.version>
-        <jpact.version>1.0-SNAPSHOT</jpact.version>
+        <contract.version>0.0.1-SNAPSHOT</contract.version>
         <junit.version>4.12</junit.version>
-        <logback.version>1.1.3</logback.version>
-        <spring.version>4.1.6.RELEASE</spring.version>
+		<lombok.version>1.16.4</lombok.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
         <spring.boot.version>1.2.6.RELEASE</spring.boot.version>
     </properties>
 
 
 
     <dependencies>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -71,7 +72,6 @@
             <version>${jaxb.version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -81,8 +81,8 @@
 
         <dependency>
             <groupId>org.seekay</groupId>
-            <artifactId>jpact-client</artifactId>
-            <version>${jpact.version}</version>
+            <artifactId>contract-client</artifactId>
+            <version>${contract.version}</version>
             <scope>test</scope>
         </dependency>
 

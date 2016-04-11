@@ -21,6 +21,7 @@ public class KeyValueController {
   @ResponseBody
   @RequestMapping(value = "/pair", method = POST)
   public KeyValuePair create(@RequestBody  KeyValuePair keyValuePair) {
+	//log.info("Pair created : {}", keyValuePair);
     return keyValueService.create(keyValuePair);
   }
 
