@@ -11,7 +11,6 @@ import java.util.Set;
 
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
-
 @RestController
 public class KeyValueController {
 
@@ -20,8 +19,8 @@ public class KeyValueController {
 
   @ResponseBody
   @RequestMapping(value = "/pair", method = POST)
+  @ResponseStatus(value = HttpStatus.CREATED)
   public KeyValuePair create(@RequestBody  KeyValuePair keyValuePair) {
-	//log.info("Pair created : {}", keyValuePair);
     return keyValueService.create(keyValuePair);
   }
 
