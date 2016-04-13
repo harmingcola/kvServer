@@ -13,7 +13,8 @@ import java.util.Set;
 public class KeyValueDao {
 
   private Map<String, String> database = new HashMap<String, String>() {{
-    put("table", "I'm a table");
+	  put("table", "I'm a table");
+	  put("weight", "220");
   }};
 
   public KeyValuePair create(KeyValuePair keyValuePair) {
