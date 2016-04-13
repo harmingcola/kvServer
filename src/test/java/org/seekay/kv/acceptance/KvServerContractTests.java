@@ -8,7 +8,7 @@ public class KvServerContractTests {
 	@Test
 	public void runContractTestsAgainstServer() {
 
-		ContractClient.newClient().againstPath("http://localhost:8080/kv")
+		ContractClient.newClient().againstPath("http://localhost:8080")
 				.withGitConfig("https://github.com/harmingcola/kvContracts.git")
 				.runTests();
 
