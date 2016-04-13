@@ -17,7 +17,6 @@ public class KeyValueController {
   @Autowired
   private KeyValueService keyValueService;
 
-  @ResponseStatus(HttpStatus.CREATED)
   @ResponseBody
   @RequestMapping(value = "/pair", method = POST)
   @ResponseStatus(value = HttpStatus.CREATED)

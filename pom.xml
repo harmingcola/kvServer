@@ -109,7 +109,7 @@
                 <configuration>
                     <useFile>false</useFile>
                     <includes>
-                        <include>**/*Spec.java</include>
+                        <include>**/*Tests.java</include>
                     </includes>
                 </configuration>
             </plugin>
