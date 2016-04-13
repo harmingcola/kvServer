@@ -1,2 +1,5 @@
-Key value server
-Acceptance test server project for jPact
+#### Key Value Server (KvServer)
+### An acceptance test project for Contract
+
+## Full Documentation
+[Link](http://harmingcola.github.io/contract/)
