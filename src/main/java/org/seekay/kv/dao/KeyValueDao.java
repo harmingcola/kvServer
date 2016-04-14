@@ -15,6 +15,7 @@ public class KeyValueDao {
   private Map<String, String> database = new HashMap<String, String>() {{
 	  put("table", "I'm a table");
 	  put("weight", "220");
+      put("height", "188");
   }};
 
   public KeyValuePair create(KeyValuePair keyValuePair) {
@@ -31,6 +32,9 @@ public class KeyValueDao {
   }
 
   public KeyValuePair update(KeyValuePair keyValuePair) {
+    if(!database.containsKey(keyValuePair.getKey())) {
+      throw new KeyNotFoundException("No key ["+ keyValuePair.getKey() +"] exists, cannot be updated");
+    }
     database.put(keyValuePair.getKey(), keyValuePair.getValue());
     return read(keyValuePair.getKey());
   }
