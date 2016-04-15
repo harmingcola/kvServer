@@ -16,6 +16,7 @@ public class KeyValueDao {
 	  put("table", "I'm a table");
 	  put("weight", "220");
       put("height", "188");
+      put("blood-pressure", "6");
   }};
 
   public KeyValuePair create(KeyValuePair keyValuePair) {
@@ -40,6 +41,9 @@ public class KeyValueDao {
   }
 
   public void delete(String key) {
+    if(!database.containsKey(key)) {
+      throw new KeyNotFoundException("No key ["+ key +"] exists, cannot be updated");
+    }
     database.remove(key);
   }
 
