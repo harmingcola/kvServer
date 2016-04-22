@@ -3,11 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.seekay</groupId>
     <artifactId>keyValueServer</artifactId>
     <packaging>jar</packaging>
-
     <version>1.0-SNAPSHOT</version>
     <name>Key Value Server</name>
 
@@ -18,14 +16,12 @@
 
     <properties>
         <jaxb.version>2.2</jaxb.version>
-        <contract.version>0.0.1-SNAPSHOT</contract.version>
+        <contract.version>0.0.3-SNAPSHOT</contract.version>
         <junit.version>4.12</junit.version>
 		<lombok.version>1.16.4</lombok.version>
 		<spring.version>4.1.6.RELEASE</spring.version>
         <spring.boot.version>1.2.6.RELEASE</spring.boot.version>
     </properties>
-
-
 
     <dependencies>
 
@@ -90,7 +86,9 @@
 
 
     <build>
+
         <plugins>
+
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
@@ -128,7 +126,9 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
+
     </build>
 
 
