@@ -15,7 +15,9 @@ public class KeyValueDao {
   private Map<String, String> database = new HashMap<String, String>() {{
 	  put("table", "I'm a table");
 	  put("weight", "220");
+	  put("weight-json", "220");
       put("height", "188");
+      put("height-json", "188");
       put("blood-pressure", "6");
   }};
 

@@ -14,6 +14,6 @@ public class ExceptionHandlingControllerAdvice {
   @ResponseStatus(value= HttpStatus.NOT_FOUND)
   @ExceptionHandler(KeyNotFoundException.class)
   public String handleCustomException(KeyNotFoundException e) {
-    return e.getMessage();
+    return "{\"message\":\""+ e.getMessage() +"\"}";
   }
 }
