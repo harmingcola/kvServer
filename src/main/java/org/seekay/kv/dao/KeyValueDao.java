@@ -29,7 +29,7 @@ public class KeyValueDao {
   public KeyValuePair read(String key) {
     String value = database.get(key);
     if(value == null) {
-      throw new KeyNotFoundException("No key ["+ key +"] exists");
+      throw new KeyNotFoundException("Requested key does not exist");
     }
     return new KeyValuePair(key, value);
   }

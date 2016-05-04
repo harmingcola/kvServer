@@ -16,7 +16,7 @@
 
     <properties>
         <jaxb.version>2.2</jaxb.version>
-        <contract.version>0.0.2-SNAPSHOT</contract.version>
+        <contract.version>0.0.4-SNAPSHOT</contract.version>
         <junit.version>4.12</junit.version>
 		<lombok.version>1.16.4</lombok.version>
 		<spring.version>4.1.6.RELEASE</spring.version>
