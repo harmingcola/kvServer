@@ -12,14 +12,7 @@ import java.util.Set;
 @Repository
 public class KeyValueDao {
 
-  private Map<String, String> database = new HashMap<String, String>() {{
-	  put("table", "I'm a table");
-	  put("weight", "220");
-	  put("weight-json", "220");
-      put("height", "188");
-      put("height-json", "188");
-      put("blood-pressure", "6");
-  }};
+  private Map<String, String> database = new HashMap<String, String>();
 
   public KeyValuePair create(KeyValuePair keyValuePair) {
     database.put(keyValuePair.getKey(), keyValuePair.getValue());
