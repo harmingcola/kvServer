@@ -15,7 +15,7 @@
     -->
 
     <properties>
-        <contract.version>0.0.5-SNAPSHOT</contract.version>
+        <contract.version>0.0.6-SNAPSHOT</contract.version>
         <jaxb.version>2.2</jaxb.version>
         <junit.version>4.12</junit.version>
 		<lombok.version>1.16.4</lombok.version>
