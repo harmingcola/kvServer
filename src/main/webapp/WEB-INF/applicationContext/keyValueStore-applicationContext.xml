@@ -22,7 +22,6 @@
     <!-- Component scan service layer -->
     <context:component-scan base-package="org.seekay.kv.service" />
 
-
     <bean id="xmlViewer" class="org.springframework.web.servlet.view.xml.MarshallingView">
         <constructor-arg>
             <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
